@@ -14,3 +14,9 @@
 @property (nonatomic, assign) int generation;
 
 @end
+
+@interface evolveStep : CCSprite
+
+-(void)evolveStep;
+
+@end

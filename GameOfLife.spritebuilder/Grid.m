@@ -13,11 +13,27 @@
 static const int GRID_ROWS = 8;
 static const int GRID_COLUMNS = 10;
 
+@implementation evolveStep {
+    //update each Creature's neighbor count
+    [self countNeighbors];
+    
+    //update each Creature's state
+    [self updateCreatures];
+    
+    //update the generation so the label's text will display the correct generation
+    _generation++;
+}
+@end
+
+
+
 @implementation Grid {
     NSMutableArray *_gridArray;
     float _cellWidth;
     float _cellHeight;
 }
+
+
 
 - (void)onEnter
 {
