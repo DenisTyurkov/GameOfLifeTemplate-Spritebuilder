@@ -20,3 +20,9 @@
 -(void)evolveStep;
 
 @end
+
+@interface countNeighbors : CCSprite
+
+-(void)countNeighbors;
+
+@end
