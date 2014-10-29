@@ -13,16 +13,8 @@
 @property (nonatomic, assign) int totalAlive;
 @property (nonatomic, assign) int generation;
 
-@end
-
-@interface evolveStep : CCSprite
-
--(void)evolveStep;
-
-@end
-
-@interface countNeighbors : CCSprite
-
--(void)countNeighbors;
+- (void)evolveStep;
+- (void)countNeighbors;
+- (void)updateCreatures;
 
 @end
